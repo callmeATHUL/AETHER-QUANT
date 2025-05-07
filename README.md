@@ -118,8 +118,8 @@ If you want to contribute:
  💬 Contact
 
 * Maintainer: Athul P. Sudheer
-* Email: \[[your.email@example.com](mailto:your.email@example.com)] *(replace before uploading)*
-* GitHub: [https://github.com/yourusername/AetherQuant](https://github.com/yourusername/AetherQuant)
+* Email: )] athulpsudheer@gmail.com
+* GitHub: [https://github.com/yourusername/AetherQuant](https://github.com/callmeATHUL/AetherQuant)
 
 ---
 
