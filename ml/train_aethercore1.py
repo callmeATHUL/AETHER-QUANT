@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import joblib
 import logging
+from pathlib import Path
 from lightgbm import LGBMClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
@@ -14,12 +15,16 @@ print(f"📁 Current Working Directory: {os.getcwd()}")
 logging.basicConfig(level=logging.INFO)
 
 
-def load_features(path="processed/BTCUSDT_4h_features.parquet"):
-	if not os.path.exists(path):
-		raise FileNotFoundError(f"Feature file not found at {path}")
-	df = pd.read_parquet(path)
-	logging.info(f"📦 Loaded feature data: {df.shape[0]} rows")
-	return df
+def load_features(path=None):
+        if path is None:
+                base = Path(__file__).resolve().parent / "processed"
+                path = base / "BTCUSDT_4h_features.parquet"
+        path = Path(path)
+        if not path.exists():
+                raise FileNotFoundError(f"Feature file not found at {path}")
+        df = pd.read_parquet(path)
+        logging.info(f"📦 Loaded feature data: {df.shape[0]} rows")
+        return df
 
 
 def prepare_data(df):

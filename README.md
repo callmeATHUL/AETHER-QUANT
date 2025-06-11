@@ -81,10 +81,9 @@ bash
 python ml/train_aethercore1.py
 
 
- Start API Server (Coming Soon)
+Start API Server (Coming Soon)
 
-bash
-uvicorn api.main:app --reload
+API module not yet implemented
 
 
  Launch Backoffice UI (Planned)
@@ -118,7 +117,7 @@ If you want to contribute:
  💬 Contact
 
 * Maintainer: Athul P. Sudheer
-* Email: )] athulpsudheer@gmail.com
+* Email: athulpsudheer@gmail.com
 * GitHub: [https://github.com/yourusername/AetherQuant](https://github.com/callmeATHUL/AetherQuant)
 
 ---
