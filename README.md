@@ -30,7 +30,7 @@ AetherQuant/
 │   ├── features/     Feature engineering, technical indicators
 │   └── raw/          Raw OHLCV data storage
 ├── ml/               Machine learning models (training, prediction)
-├── api/              API layer for real-time predictions
+├── api/              API layer for real-time predictions (coming soon)
 ├── execution/        Trade execution and simulation (paper trading)
 ├── risk/             Risk management logic (position sizing, stops)
 ├── scripts/          Utility scripts (data sync, cleanups)
@@ -51,7 +51,7 @@ AetherQuant/
 |--------------------|------------------|
 | Data Sources       | Binance, Yahoo Finance |
 | ML Models          | LightGBM, Logistic Regression (expandable to XGBoost, LSTM) |
-| API Server         | FastAPI (planned), Streamlit for monitoring |
+| API Server         | FastAPI (planned, not yet implemented), Streamlit for monitoring |
 | DB Logging         | PostgreSQL or SQLite |
 | Deployment         | DigitalOcean, AWS, GCP (manual or Docker) |
 | Scheduling         | Cron, apscheduler |
@@ -81,10 +81,9 @@ bash
 python ml/train_aethercore1.py
 
 
- Start API Server (Coming Soon)
+ API Server (Not Yet Implemented)
 
-bash
-uvicorn api.main:app --reload
+The API module is still under development and will be added in a future release.
 
 
  Launch Backoffice UI (Planned)
