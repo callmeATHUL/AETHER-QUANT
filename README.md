@@ -117,7 +117,7 @@ If you want to contribute:
  💬 Contact
 
 * Maintainer: Athul P. Sudheer
-* Email: )] athulpsudheer@gmail.com
+* Email: athulpsudheer@gmail.com
 * GitHub: [https://github.com/yourusername/AetherQuant](https://github.com/callmeATHUL/AetherQuant)
 
 ---
